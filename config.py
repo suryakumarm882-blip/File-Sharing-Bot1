@@ -24,7 +24,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "7087329103"))
 PORT = os.environ.get("PORT", "8080")
 
 # Database
-DB_URI = os.environ.get("DB_URI")
+DB_URI = os.environ.get("DB_URI", "").strip()
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster4")
 
 # Force sub channel ID, if you want enable force sub
